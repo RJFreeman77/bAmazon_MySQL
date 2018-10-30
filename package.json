@@ -1,0 +1,29 @@
+{
+  "name": "bAmazon_MySQL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "columnify": "^1.5.4",
+    "dotenv": "^6.1.0",
+    "inquirer": "^6.2.0",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RJFreeman77/bAmazon_MySQL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RJFreeman77/bAmazon_MySQL/issues"
+  },
+  "homepage": "https://github.com/RJFreeman77/bAmazon_MySQL#readme"
+}
