@@ -13,4 +13,5 @@ CREATE TABLE products (
     , unit_cost DECIMAL (10,2) NOT NULL
     , price DECIMAL (10,2) NOT NULL
     , stock_quantity INT NOT NULL
+    , items_sold INT
     );
