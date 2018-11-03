@@ -63,9 +63,14 @@ function displayStore() {
                         (err, results) => {
                             if (err) throw err;
                             let dbQuantity = results[0].stock_quantity;
+                            let price = results[0].price;
+                            let product = results[0].product_name;
                             if (dbQuantity >= quantity) {
-                                console.log(chalk.green("Congrats, you bought your thing!"));
+                                console.log(chalk.green(`Congrats, you bought your ${product}(s).\n Your total cost is: ` +
+                                    chalk.bgRed(quantity * price)));
+
                                 updateDB(productID, dbQuantity, quantity);
+
                             } else {
                                 console.log(chalk.red(`Opps, there are only ${dbQuantity} left.`));
                                 stopOrGo();
@@ -86,9 +91,10 @@ function updateDB(id, dbQuant, purchaseQuant) {
         WHERE item_id = ${id}`,
         (err) => {
             if (err) throw err;
-            console.log(chalk.green("Your item(s) have been purchased and the database has been updated!"));
+
+            stopOrGo();
         }
-    )
+    );
 }
 
 function stopOrGo() {
