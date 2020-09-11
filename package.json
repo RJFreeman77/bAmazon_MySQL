@@ -12,13 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^2.4.1",
+    "chalk": "^4.1.0",
     "columnify": "^1.5.4",
-    "dotenv": "^6.1.0",
-    "inquirer": "^6.2.0",
+    "dotenv": "^8.2.0",
+    "inquirer": "^7.3.3",
     "moment": "^2.22.2",
     "mysql": "^2.16.0",
-    "nodemon": "^1.18.5"
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {},
   "repository": {
